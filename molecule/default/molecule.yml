@@ -18,3 +18,6 @@ provisioner:
 verifier:
   name: testinfra
   directory: tests
+  # To hide the tests from the ouput just remove the next 2 lines
+  options:
+    verbosity: 1
