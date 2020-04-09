@@ -6,7 +6,6 @@ driver:
 platforms:
   - name: ubuntu1804
     image: ubuntu:18.04
-    privileged: true
     pre_build_image: true
 lint: |
   set -e
