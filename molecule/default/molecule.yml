@@ -1,0 +1,21 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: ubuntu1804
+    image: ubuntu:18.04
+    privileged: true
+    pre_build_image: true
+lint: |
+  set -e
+  ansible-lint .
+  flake8 molecule/*/tests/*.py
+  pylint molecule/*/tests/*.py
+provisioner:
+  name: ansible
+  log: true
+verifier:
+  name: testinfra
+  directory: tests

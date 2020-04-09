@@ -1,0 +1,12 @@
+---
+# Playbook taks
+
+- name: Ensure apt cache is updated
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Ensure Git is installed
+  apt:
+    name: git
+    state: present
