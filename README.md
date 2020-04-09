@@ -110,6 +110,19 @@ $ molecule verify
 
 But don't forget to run `molecule converge` to run the Ansible tasks each time you change them, or they won't be reflected at the instance.
 
+## Versions
+
+This template is tested with the following versions:
+
+|                       |                   |
+| --------------------- | ----------------- |
+| **Ansible**           |  **2.9.6**        |
+| **Molecule**          |  **3.0.2**        |
+| **TestInfra**         |  **3.2.1**        |
+| **Docker container**  |  **Ubuntu 18.04** |
+
+
+
 ## License
 
 |                |                                           |
