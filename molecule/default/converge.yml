@@ -1,6 +1,3 @@
 ---
 - name: Converge
-  hosts: all
-  tasks:
-    - name: "Include main playbook"
-      include_tasks: ../../playbook.yml
+  import_playbook: ../../playbook.yml
