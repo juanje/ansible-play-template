@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
     - name: Install python for Ansible
-      raw: |
-        test -e /usr/bin/python || \
+      raw: >
+        test -e /usr/bin/python ||
         (apt -y update && apt install -y python-minimal python3-apt)
       changed_when: false
