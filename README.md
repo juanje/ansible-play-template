@@ -76,10 +76,10 @@ The important files (the one you want to start editing) are these two:
 │           └── test_default.py
 ├── playbook.yml
 ```
-* `playbook.yml` -> Where you're going to puts your tasks.
-* `test_default.py` -> Where you're going to put your tests.
+* [playbook.yml](playbook.yml) -> Where you're going to puts your tasks.
+* [test_default.py](molecule/default/tests/test_default.py) -> Where you're going to put your tests.
 
-Right now this is configured to run the **tasks** and **tests** on a **Docker** image of **Ubuntu 18.04**. But if can be changed at the file `molecule.yml`:
+Right now this is configured to run the **tasks** and **tests** on a **Docker** image of **Ubuntu 18.04**. But if can be changed at the file [molecule.yml](molecule/default/molecule.yml):
 ```
 ├── molecule
 │   └── default
